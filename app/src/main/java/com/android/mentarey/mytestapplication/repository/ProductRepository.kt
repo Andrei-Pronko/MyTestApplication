@@ -6,6 +6,6 @@ import io.reactivex.Single
 
 interface ProductRepository {
     fun addProduct(product: Product): Completable
-    fun getProductsByTitle(): Single<List<Product>>
+    fun getProductsByTitle(productTitle: String): Single<List<Product>>
     fun getAllProducts(): Single<List<Product>>
 }
