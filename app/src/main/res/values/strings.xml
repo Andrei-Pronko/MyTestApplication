@@ -3,4 +3,7 @@
     <string name="menu_search_title">Поиск</string>
     <string name="menu_add_title">Добавить</string>
     <string name="menu_sort_title">Сортировка</string>
+    <string name="card_symbol_x">x</string>
+    <string name="card_symbol_equals">=</string>
+    <string name="card_symbol_dollar">$</string>
 </resources>

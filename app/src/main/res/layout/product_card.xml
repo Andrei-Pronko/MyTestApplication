@@ -19,7 +19,7 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
-                android:text="Название продукта"
+                android:text=""
                 android:textAppearance="@style/TextAppearance.AppCompat.Title"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -32,7 +32,7 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
-                android:text="Информация: "
+                android:text=""
                 android:textAppearance="@style/TextAppearance.AppCompat.Title"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -45,7 +45,7 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:gravity="center_horizontal|center_vertical"
-                android:text="10"
+                android:text=""
                 android:textAppearance="@style/TextAppearance.AppCompat.Title"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/text_product_info"/>
@@ -57,7 +57,7 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:gravity="center_horizontal|center_vertical"
-                android:text="3"
+                android:text=""
                 android:textAppearance="@style/TextAppearance.AppCompat.Title"
                 app:layout_constraintStart_toEndOf="@+id/text_symbol_x"
                 app:layout_constraintTop_toBottomOf="@+id/text_product_info"/>
@@ -69,7 +69,7 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:gravity="center_horizontal|center_vertical"
-                android:text="30"
+                android:text=""
                 android:textAppearance="@style/TextAppearance.AppCompat.Title"
                 app:layout_constraintStart_toEndOf="@+id/text_symbol_equals"
                 app:layout_constraintTop_toBottomOf="@+id/text_product_info"/>
@@ -80,7 +80,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
-                android:text="x"
+                android:text="@string/card_symbol_x"
                 android:textAppearance="@style/TextAppearance.AppCompat.Title"
                 app:layout_constraintStart_toEndOf="@+id/text_cost_for_one"
                 app:layout_constraintTop_toBottomOf="@+id/text_product_info"/>
@@ -91,7 +91,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
-                android:text="="
+                android:text="@string/card_symbol_equals"
                 android:textAppearance="@style/TextAppearance.AppCompat.Title"
                 app:layout_constraintStart_toEndOf="@+id/text_numbers_of_products"
                 app:layout_constraintTop_toBottomOf="@+id/text_product_info"/>
@@ -102,7 +102,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
-                android:text="$"
+                android:text="@string/card_symbol_dollar"
                 android:textAppearance="@style/TextAppearance.AppCompat.Title"
                 app:layout_constraintStart_toEndOf="@+id/text_total_cost"
                 app:layout_constraintTop_toBottomOf="@+id/text_product_info"/>
