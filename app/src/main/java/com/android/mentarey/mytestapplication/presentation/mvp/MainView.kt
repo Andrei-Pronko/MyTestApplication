@@ -5,4 +5,5 @@ import com.arellomobile.mvp.MvpView
 
 interface MainView : MvpView {
     fun updateData(data: List<ProductUI>)
+    fun showMessage(message: String)
 }
