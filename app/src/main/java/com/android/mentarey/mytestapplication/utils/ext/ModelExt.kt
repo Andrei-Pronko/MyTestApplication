@@ -12,3 +12,17 @@ fun Product.toProductUI(): ProductUI {
         totalCost = this@toProductUI.totalCost.toString()
     }
 }
+
+fun List<Product>.toListProductsUI(): List<ProductUI> {
+    return this.map { it.toProductUI() }
+}
+
+fun Product.containsTextInProduct(text: String): Boolean {
+    val lowerTitle = this.toProductUI().toString().toLowerCase()
+    val lowerText = text.toLowerCase()
+    return lowerTitle.contains(lowerText)
+}
+
+fun List<ProductUI>.sortByName(): List<ProductUI> {
+    return this.sortedWith(compareBy({ it.productTitle }, { it.productInfo }))
+}

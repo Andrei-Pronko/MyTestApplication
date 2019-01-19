@@ -1,6 +1,6 @@
 package com.android.mentarey.mytestapplication.presentation.models
 
-import com.android.mentarey.mytestapplication.utils.constants.Global.EMPTY_LINE
+import com.android.mentarey.mytestapplication.utils.Global.EMPTY_LINE
 import io.objectbox.annotation.Entity
 import io.objectbox.annotation.Id
 
