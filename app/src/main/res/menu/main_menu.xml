@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/menu_action_search"
+          android:icon="@drawable/baseline_search_white_36"
+          app:showAsAction="collapseActionView|ifRoom"
+          android:title="Поиск"
+          app:actionViewClass="android.support.v7.widget.SearchView"/>
+    <item android:id="@+id/menu_action_sort"
+          android:icon="@drawable/baseline_sort_white_36"
+          app:showAsAction="ifRoom"
+          android:title="Сортировка"/>
+    <item android:id="@+id/menu_action_add"
+          android:icon="@drawable/baseline_add_white_36"
+          app:showAsAction="ifRoom"
+          android:title="Добавить"/>
+</menu>
