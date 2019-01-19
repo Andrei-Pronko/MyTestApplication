@@ -9,7 +9,7 @@ import com.android.mentarey.mytestapplication.presentation.models.ProductUI
 import kotlinx.android.extensions.LayoutContainer
 import kotlinx.android.synthetic.main.product_card.*
 
-class ProductListAdapter internal constructor(private val productList: List<ProductUI>) :
+class ProductListAdapter internal constructor(private val productUIList: List<ProductUI>) :
     RecyclerView.Adapter<ProductListAdapter.ProductViewHolder>() {
 
     inner class ProductViewHolder(view: View) : RecyclerView.ViewHolder(view), LayoutContainer {
@@ -18,10 +18,10 @@ class ProductListAdapter internal constructor(private val productList: List<Prod
 
         fun bind(productUI: ProductUI) {
             text_product_title.text = productUI.productTitle
-            text_product_title.text = productUI.productInfo
-            text_product_title.text = productUI.costForOne
-            text_product_title.text = productUI.numberOfProduct
-            text_product_title.text = productUI.totalCost
+            text_product_info.text = productUI.productInfo
+            text_cost_for_one.text = productUI.costForOne
+            text_numbers_of_products.text = productUI.numberOfProduct
+            text_total_cost.text = productUI.totalCost
         }
     }
 
@@ -31,8 +31,8 @@ class ProductListAdapter internal constructor(private val productList: List<Prod
         return ProductViewHolder(productView)
     }
 
-    override fun getItemCount(): Int = productList.size
+    override fun getItemCount(): Int = productUIList.size
 
     override fun onBindViewHolder(holder: ProductViewHolder, position: Int) =
-        holder.bind(productUI = productList[position])
+        holder.bind(productUI = productUIList[position])
 }
